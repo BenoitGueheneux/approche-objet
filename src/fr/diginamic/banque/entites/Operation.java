@@ -3,11 +3,13 @@ package fr.diginamic.banque.entites;
 public abstract class Operation {
 	private String dateOperation;
 	private double montantOperation;
-	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 	}
+
+	public abstract String getType();
 
 	public Operation(String dateOperation, double montantOperation) {
 		super();
@@ -30,7 +32,5 @@ public abstract class Operation {
 	public void setMontantOperation(double montantOperation) {
 		this.montantOperation = montantOperation;
 	}
-
-	
 
 }
