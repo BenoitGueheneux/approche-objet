@@ -1,4 +1,4 @@
-package utils;
+package fr.diginamic.utils;
 
 import fr.diginamic.banque.entites.Operation;
 import fr.diginamic.banque.entites.Credit;
