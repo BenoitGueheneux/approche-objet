@@ -13,11 +13,11 @@ public class Ville implements Comparable<Ville> {
 	@Override
 //	public int compareTo(Ville ville) {
 //		return this.nom.compareTo(ville.getNom());
-//		// ArrayList dans TestVille dans essais
+//		// ArrayList dans TestListeClass dans essais
 //	}
 	public int compareTo(Ville ville) {
 		return this.nombreHabitant - ville.getNombreHabitant();
-		// ArrayList dans TestVille dans essais
+		// ArrayList dans TestListeClass dans essais
 	}
 	
 	
