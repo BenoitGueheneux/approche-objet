@@ -23,7 +23,7 @@ public class LectureFichier {
 					Integer.parseInt(tokens[9].trim().replaceAll(" ", ""))));
 
 		}
-		lines3.add("Nom;CodeDepartement;NomDeLaRegion;PopulationTotale;");
+		lines3.add("Nom de la commune;Code du departement;Nom de la region;Population totale;");
 		for (Ville ville : lines2) {
 			if(ville.getPopulationTotale()>25000) {
 				lines3.add(ville.getNom() + ";" + ville.getCodeDepartement() + ";"+ ville.getNomDeLaRegion()

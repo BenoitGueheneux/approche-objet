@@ -46,6 +46,12 @@ public class TestListeClass {
 		list.remove(villemin);
 		
 		System.out.println(list);
+		for (int i = 0; i < list.size(); i++) {
+			if (100000 < list.get(i).getNombreHabitant()) {
+				list.get(i).setNom(list.get(i).getNom().toUpperCase());
+			}
+		}
+		System.out.println(list);
 		
 	}
 
