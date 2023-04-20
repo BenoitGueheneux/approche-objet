@@ -5,6 +5,7 @@ import java.util.Date;
 
 public class TestDates {
 
+	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 		Date date = new Date(123,3,19);
 		SimpleDateFormat formateur = new SimpleDateFormat("dd/MM/yyyy");
