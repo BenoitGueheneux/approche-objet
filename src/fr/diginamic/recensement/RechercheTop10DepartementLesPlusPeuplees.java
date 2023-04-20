@@ -5,21 +5,21 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Scanner;
 
-public class RechercheTop10RegionLesPlusPeuplees extends MenuService {
+public class RechercheTop10DepartementLesPlusPeuplees extends MenuService {
 	private HashMap<String, Integer> map = new HashMap<String, Integer>();
 
-	public RechercheTop10RegionLesPlusPeuplees() {
+	public RechercheTop10DepartementLesPlusPeuplees() {
 		super();
 	}
 
 	@Override
 	public void traiter(Recensement recensement, Scanner scanner) {
 		for (Ville ville : recensement.getVilles()) {
-			if (map.containsKey(ville.getNomDeLaRegion())) {
-				Integer temp = map.get(ville.getNomDeLaRegion());
-				map.put(ville.getNomDeLaRegion(), ville.getPopulationTotale() + temp);
+			if (map.containsKey(ville.getCodeDepartement())) {
+				Integer temp = map.get(ville.getCodeDepartement());
+				map.put(ville.getCodeDepartement(), ville.getPopulationTotale() + temp);
 			} else {
-				map.put(ville.getNomDeLaRegion(), ville.getPopulationTotale());
+				map.put(ville.getCodeDepartement(), ville.getPopulationTotale());
 			}
 		}
 		ArrayList<Integer> liste1 = new ArrayList<Integer>();

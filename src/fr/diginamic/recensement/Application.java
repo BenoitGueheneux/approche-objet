@@ -33,7 +33,25 @@ public class Application {
 		case 4:
 			RechercheTop10RegionLesPlusPeuplees recherche4 = new RechercheTop10RegionLesPlusPeuplees();
 			recherche4.traiter(recensement, scanner);
-			System.out.println(recherche4.getMap());
+			break;
+		case 5:
+			RechercheTop10DepartementLesPlusPeuplees recherche5 = new RechercheTop10DepartementLesPlusPeuplees();
+			recherche5.traiter(recensement, scanner);
+			break;
+		case 6:
+			RechercheTop10VilleLesPlusPeupleesDUnDepartement recherche6 = new RechercheTop10VilleLesPlusPeupleesDUnDepartement();
+			recherche6.traiter(recensement, scanner);
+			break;
+		case 7:
+			RechercheTop10VilleLesPlusPeupleesDUneRegion recherche7 = new RechercheTop10VilleLesPlusPeupleesDUneRegion();
+			recherche7.traiter(recensement, scanner);
+			break;
+		
+		case 8:
+			RechercheTop10VilleLesPlusPeuplees recherche8 = new RechercheTop10VilleLesPlusPeuplees();
+			recherche8.traiter(recensement, scanner);
+			break;
+		case 9:
 			break;
 	}
 
